@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pendaftaran</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="sidebar.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar bg-dark" aria-label="breadcrumb">
+		  <div class="container-fluid">
+		  	<a href="HomeUtama.html">
+		      <img src="Asset/Logodesain.png" alt="Logo" width="500" height="100" class="d-inline-block align-text-top">
+		      	  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="#" class="link-light">DAFTAR</a></li>
+				    <li class="breadcrumb-item"><a href="Login.html" class="link-light">LOGIN</a></li>
+				  </ol>
+		  </div>
+		</nav>
+	</div>
+	<div class="container">
+		<div class="sidebar">
+			<div class="main">
+				<div class="list-item dropdown">
+					<a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<span class="description">TEKNIK</span>
+					</a>
+					<ul class="dropdown-menu">
+			            <li><a class="dropdown-item" href="#">Teknik Informatika</a></li>
+			        </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+			<form action="proses.php" method="post" enctype="multipart/from-data">
+			<h2 align="center">FORMULIR PENDAFTARAN MAHASISWA BARU</h2>
+			<h2 align="center">FAKULTAS TEKNIK</h2>
+			<table align="center">
+				<br>
+				<tr>
+					<td width="280">Nama</td>
+					<td>:</td>
+					<td width="300"><input type="text"></td>
+					<td rowspan="6"><img src="teknik-informatika_v2.jpg" alt="TI2" width="400" height="300"></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>:</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>No.Telp</td>
+					<td>:</td>
+					<td><input type="number"></td>
+				</tr>
+				<tr>
+					<td>Alamat</td>
+					<td>:</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>Tgl Lahir</td>
+					<td>:</td>
+					<td><input type="date"></td>
+				</tr>
+				<tr>
+					<td>Jenis Kelamin</td>
+					<td>:</td>
+					<td><input type="radio" name="jk">Laki-laki
+						<input type="radio" name="jk">Perempuan
+					</td>
+				</tr>
+				<tr>
+					<td>Prodi</td>
+					<td>:</td>
+					<td><select>
+						<option>Pilih Disini</option>
+						<option>Teknik Informatika</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Upload Foto</td>
+					<td>:</td>
+					<td><input type="file" name="foto"></td>
+				</tr>
+				<tr>
+					<br>
+					<td></td>
+					<td></td>
+					<td><input type="submit" value="Save">
+						<input type="reset" value="Reset">
+						<input type="button" value="Cancel">
+					</td>
+				</tr>
+			</table>
+		</form>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

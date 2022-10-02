@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Universitas Islam Attahiriyah Jakarta</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="sidebar.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="https://kit.fontawesome.com"></script>
+</head>
+<body>
+	<nav class="navbar bg-dark" aria-label="breadcrumb">
+		<div class="container-fluid">
+		<a href="HomeUtama.html">
+		  <img src="Asset/Logodesain.png" alt="Logo" width="500" height="100" class="d-inline-block align-text-top">
+		    <ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#" class="link-light">DAFTAR</a></li>
+				<li class="breadcrumb-item"><a href="Login.html" class="link-light">LOGIN</a></li>
+			</ol>
+		</div>
+	</nav>
+	<nav class="sidebar">
+		<div class="text">Fakultas</div>
+		<ul>
+			<li>
+				<a href="#" class="ai-btn">Agama Islam
+					<span class="fas fa-caret-down first"></span>
+				</a>
+				<ul class="ai-show">
+					<li><a href="#">Ilmu Komunikasi</a></li>
+					<li><a href="#">Sastra Arab</a></li>
+					<li><a href="#">Ilmu Agama Islam</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="hk-btn">Hukum
+					<span class="fas fa-caret-down second"></span>
+				</a>
+				<ul class="hk-show">
+					<li><a href="#">Ilmu Hukum</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Ekonomi</a>
+				<ul>
+					<li><a href="#">Akuntasi</a></li>
+					<li><a href="#">Manajemen</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Teknik</a>
+				<ul>
+					<li><a href="#">Teknik Informatika</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+	$('.ai-btn'),clik(function(){
+		$('nav ul .ai-show').toggleClass("show");
+		$('nav ul .first').toggleClass("rotate");
+	});
+	$('.hk-btn'),clik(function(){
+		$('nav ul .hk-show').toggleClass("show1");
+		$('nav ul .second').toggleClass("rotate");
+	});
+	$('nav ul li').click(function(){
+		$(this).addClass("active").siblings().removeClass("active")
+	});
+</script>
+</body>
+</html>
